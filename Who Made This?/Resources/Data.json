@@ -1,0 +1,94 @@
+[
+    {
+        "fullName": "Ludwig Van Beethoven",
+        "lastName": "Beethoven",
+        "country": "Germany",
+        "nationality": "German",
+        "born": 1770,
+        "death": 1827,
+        "id": 1001,
+        "description": "Ludwig van Beethoven was a German composer and pianist. Beethoven remains one of the most admired composers in the history of Western music; his works rank amongst the most performed of the classical music repertoire and span the transition from the Classical period to the Romantic era in classical music.",
+        "imageName": "beethoven",
+        "works": [
+            {
+                "title" : "Symphony 5 in C Minor",
+                "audioName": "beethoven-symphony-5",
+                "excerptName": ""
+            },
+            {
+                "title" : "Egmont Overture",
+                "audioName": "beethoven-egmont",
+                "excerptName": ""
+            },
+            {
+                "title" : "Piano Concerto 3",
+                "audioName": "beethoven-piano-concerto-3",
+                "excerptName": ""
+            },
+            {
+                "title" : "Symphony 9 in D Minor",
+                "audioName": "beethoven-symphony-9",
+                "excerptName": ""
+            },
+            {
+                "title" : "Piano Sonata No 14, Moonlight",
+                "audioName": "beethoven-moonlight-sonata",
+                "excerptName": ""
+            }
+        ]
+    },
+    {
+        "fullName": "Johannes Brahms",
+        "lastName": "Brahms",
+        "country": "Germany",
+        "nationality": "German",
+        "born": 1833,
+        "death": 1897,
+        "id": 1002,
+        "description": "Johannes Brahms was a German composer, pianist, and conductor of the Romantic period. Born in Hamburg into a Lutheran family, he spent much of his professional life in Vienna.",
+        "imageName": "brahms",
+        "works": [
+            {
+                "title" : "",
+                "audioName": "",
+                "excerptName": ""
+            }
+        ]
+    },
+    {
+        "fullName": "Pyotr Ilyich Tchaikovsky",
+        "lastName": "Tchaikovsky",
+        "country": "Russia",
+        "nationality": "Russian",
+        "born": 1840,
+        "death": 1893,
+        "id": 1003,
+        "description": "Pyotr Ilyich Tchaikovsky was a Russian composer of the Romantic period. He was the first Russian composer whose music would make a lasting impression internationally. He was honored in 1884 by Tsar Alexander III and awarded a lifetime pension.",
+        "imageName": "tchaikovsky",
+        "works": [
+            {
+                "title" : "",
+                "audioName": "",
+                "excerptName": ""
+            }
+        ]
+    },
+    {
+        "fullName": "Antonio Lucio Vivaldi",
+        "lastName": "Vivaldi",
+        "country": "Italy",
+        "nationality": "Italian",
+        "born": 1678,
+        "death": 1741,
+        "id": 1002,
+        "description": "Antonio Lucio Vivaldi was an Italian Baroque composer, virtuoso violinist, teacher, impresario, and Roman Catholic priest. Born in Venice, the capital of the Venetian Republic, Vivaldi is regarded as one of the greatest Baroque composers.",
+        "imageName": "vivaldi",
+        "works": [
+            {
+                "title" : "",
+                "audioName": "",
+                "excerptName": ""
+            }
+        ]
+    }
+]
