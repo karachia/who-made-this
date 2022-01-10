@@ -7,11 +7,22 @@
 
 import SwiftUI
 
-struct Question: View {
+struct QuestionView: View {
     @State var iconName: String = "play.fill"
     var answer: Composer
     var otherOptions: [Composer]
-    //    var excerpt:
+    
+    func generateAllOptions() -> [QuizOption]{
+        var allOptions: [QuizOption] = []
+        allOptions.append(QuizOption(optionID: 0, composer: self.answer))
+        
+        var i = 1
+        for option in self.otherOptions{
+            allOptions.append(QuizOption(optionID: i, composer: option))
+            i += 1
+        }
+        return allOptions
+    }
         
     
     var body: some View {
@@ -34,7 +45,9 @@ struct Question: View {
                     .clipShape(Circle())
                 }
                     
-            QuestionOptions()
+            QuestionOptions(options: self.generateAllOptions()
+            )
+                            
             
 
             
@@ -61,12 +74,14 @@ struct Question: View {
             }
             .padding()
         }
+        .navigationBarBackButtonHidden(true)
+        .navigationBarHidden(true)
     }
 }
 
 struct Question_Previews: PreviewProvider {
     static var previews: some View {
-        Question(answer: composers[0], otherOptions: [composers[1], composers[2], composers[3]])
+        QuestionView(answer: composers[0], otherOptions: [composers[1], composers[2], composers[3]])
 .previewInterfaceOrientation(.portrait)
     }
 }

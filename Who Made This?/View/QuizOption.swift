@@ -12,7 +12,8 @@ struct QuizOption: View {
     @State private var isSelected: Bool = false
     @State private var color: Color = Color.white
     
-    var composer: Composer = composers[0]
+    var optionID: Int
+    var composer: Composer
     
     
     var body: some View {
@@ -27,7 +28,7 @@ struct QuizOption: View {
                 }
                 
             }) {
-                CircleImage()
+                CircleImage(image: composer.image)
                     .frame(width: 110, height: 110)
             }
             
@@ -44,6 +45,6 @@ struct QuizOption: View {
 
 struct QuizOption_Previews: PreviewProvider {
     static var previews: some View {
-        QuizOption()
+        QuizOption(optionID: 0, composer: composers[3])
     }
 }

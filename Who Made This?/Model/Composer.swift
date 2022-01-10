@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct Composer: Hashable, Codable {
+struct Composer: Hashable, Codable, Identifiable {
     var id: Int
     var fullName: String
     var lastName: String
