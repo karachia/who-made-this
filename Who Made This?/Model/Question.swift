@@ -10,6 +10,9 @@ import SwiftUI
 
 
 struct Question: Hashable {
+    var id: Int
     var answer: Composer
-    var options: [Composer]
+    var workIndex: Int
+    var otherOptions: [Composer]
+    var composersWorkNumber: Int
 }

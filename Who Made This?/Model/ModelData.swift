@@ -7,6 +7,7 @@
 
 import Foundation
 
+var quiz: Quiz = Quiz()
 var composers: [Composer] = load("Data.json")
 
 

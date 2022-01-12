@@ -15,7 +15,6 @@ struct QuestionOptions: View {
     var body: some View {
         LazyVGrid(columns: gridItemLayout, spacing: 10){
             ForEach((0..<self.options.count), id: \.self) { i in
-//                self.quizOptions[i]
                 self.options[i]
 
             }

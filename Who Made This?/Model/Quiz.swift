@@ -12,16 +12,26 @@ struct Quiz: Hashable {
     var questions: [Question] = []
     var score: Int = 0
     
-    func generateQuestions() {
+
+    init () {
+        // Generate 5 questions
         // find 5 composers, one for each question as the answer
-        let indexOfComposersForQuestion = (0...4).map( {_ in Int.random(in: 0..<composers.count)} )
+        let indexOfComposersForQuestions = (0...4).map( {_ in Int.random(in: 0..<composers.count)} )
+//        print("indexOfComposersForQuestions: \(indexOfComposersForQuestions)")
+        
         var listOfAllQuestionsAndAnswers: [Int: [Int]] = [:]
         
-        for idx in indexOfComposersForQuestion {
+        for idx in indexOfComposersForQuestions {
             listOfAllQuestionsAndAnswers[idx] = []
         }
         
-        for idx in indexOfComposersForQuestion{
+//        print("listOfAllQuestionsAndAnswers: \(listOfAllQuestionsAndAnswers)")
+        
+        var counter = 0
+        for idx in indexOfComposersForQuestions{
+//            print("composer \(composers[idx].lastName)")
+//            print("works # \(composers[idx].works.count)")
+            
             // get a randomm work from this composer
             var indexOfMusicForComposer = Int.random(in: 0..<composers[idx].works.count)
             
@@ -32,12 +42,22 @@ struct Quiz: Hashable {
             listOfAllQuestionsAndAnswers[idx]!.append(indexOfMusicForComposer)
             
             
+            var options:  [Composer] = []
             
-//            questions.append(Question(answer: composers[idx], music: indexOfMusicForComposer, otherOptions: ))
-            
-            
-        }
+            for _ in 0...2{
+                var optionIdx = Int.random(in: 0..<composers.count)
                 
+                while (optionIdx == idx){
+                    optionIdx = Int.random(in: 0..<composers.count)
+                }
+                
+                options.append(composers[optionIdx])
+            }
+            
+//            print("listOfAllQuestionsAndAnswers: \(listOfAllQuestionsAndAnswers)")
+        
+            self.questions.append(Question(id: counter, answer: composers[idx], workIndex: indexOfMusicForComposer, otherOptions: options, composersWorkNumber: indexOfMusicForComposer))
+            counter += 1
+        }
     }
-    
 }

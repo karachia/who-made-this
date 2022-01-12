@@ -7,35 +7,73 @@
 
 import SwiftUI
 
-var quiz: [Quiz] = []
-
 struct HomeView: View {
+//    @State private var action: Int? = 0
+
     var body: some View {
         NavigationView {
-            VStack {
-                Text("Do you know your composers?")
-                    .font(.title)
-                    .fontWeight(.heavy)
-                    .italic()
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(.gray)
-                    .padding(.bottom)
-            
-               
-                NavigationLink {
-                    QuestionView(answer: composers[0], otherOptions: [composers[1], composers[2], composers[3]])
-                } label: {
-                   Text("Click Here to Start the Quiz!")
-                        .font(.title3)
-                        .bold()
-                        .foregroundColor(.white)
-                }
-                .padding()
-                .background(Color.black)
-                .padding(5)
-                .border(Color.black, width: 3)
+            ZStack {
+                Rectangle()
+                    .fill(
+                        LinearGradient(gradient: Gradient(colors: [Color.black, Color.gray, Color.white, Color.white, Color.black]), startPoint: .bottomLeading, endPoint: .topTrailing))
+                    .edgesIgnoringSafeArea(.all)
                 
-                Spacer()
+                VStack {
+                    Text("Do you know your composers?")
+                        .font(.title)
+                        .fontWeight(.heavy)
+                        .italic()
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(.gray)
+                        .padding(.bottom)
+            
+                    NavigationLink {
+                        QuestionView(question: quiz.questions[0])
+                    } label: {
+                        Text("Click Here to Start the Quiz! ")
+                             .font(.title3)
+                             .bold()
+                             .foregroundColor(.white)
+                    }
+                        .padding()
+                        .background(Color.black)
+                        .padding(5)
+                        .border(Color.black, width: 3)
+                    
+                    Text(" ")
+                        .padding(4)
+                    
+                    Text("Or")
+                        .font(.largeTitle)
+                        .fontWeight(.heavy)
+                        .italic()
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(.gray)
+                        .padding(.bottom)
+                    
+                    Text("Want to get cultured?")
+                        .font(.title)
+                        .fontWeight(.heavy)
+                        .italic()
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(.gray)
+                        .padding(.bottom)
+                    
+                    NavigationLink {
+                        // TODO: put the listening view here
+                    } label: {
+                        Text("Click Here to Get Educated!")
+                             .font(.title3)
+                             .bold()
+                             .foregroundColor(.white)
+                    }
+                        .padding()
+                        .background(Color.black)
+                        .padding(5)
+                        .border(Color.black, width: 3)
+
+                    Spacer()
+                }
             }
         }
         .navigationBarTitle("")
@@ -45,6 +83,8 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        Group {
+            HomeView()
+        }
     }
 }

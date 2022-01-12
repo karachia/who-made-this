@@ -29,11 +29,13 @@ struct QuizOption: View {
                 
             }) {
                 CircleImage(image: composer.image)
-                    .frame(width: 110, height: 110)
+                    .frame(minWidth: 90, idealWidth: 125, maxWidth:150, minHeight: 90, idealHeight: 125, maxHeight: 90, alignment: .center)
+                    .padding(.top)
             }
             
             Text(composer.lastName)
                 .font(.caption)
+                .padding()
         }
             .padding()
             .background(LinearGradient(gradient: Gradient(colors: [color, Color.white]), startPoint: .top, endPoint: .bottom))

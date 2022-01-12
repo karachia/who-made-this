@@ -6,7 +6,7 @@
         "nationality": "German",
         "born": 1770,
         "death": 1827,
-        "id": 1001,
+        "id": 1,
         "description": "Ludwig van Beethoven was a German composer and pianist. Beethoven remains one of the most admired composers in the history of Western music; his works rank amongst the most performed of the classical music repertoire and span the transition from the Classical period to the Romantic era in classical music.",
         "imageName": "beethoven",
         "works": [
@@ -21,8 +21,8 @@
                 "excerptName": ""
             },
             {
-                "title" : "Piano Concerto 3",
-                "audioName": "beethoven-piano-concerto-3",
+                "title" : "Piano Concerto No. 5 ('Emperor')",
+                "audioName": "beethoven-piano-concerto-5",
                 "excerptName": ""
             },
             {
@@ -44,13 +44,33 @@
         "nationality": "German",
         "born": 1833,
         "death": 1897,
-        "id": 1002,
+        "id": 2,
         "description": "Johannes Brahms was a German composer, pianist, and conductor of the Romantic period. Born in Hamburg into a Lutheran family, he spent much of his professional life in Vienna.",
         "imageName": "brahms",
         "works": [
             {
-                "title" : "",
-                "audioName": "",
+                "title" : "Hungarian Dance No. 1",
+                "audioName": "brahms-hungarian-dance-1",
+                "excerptName": ""
+            },
+            {
+                "title" : "Hungarian Dance No. 5",
+                "audioName": "brahms-hungarian-dance-5",
+                "excerptName": ""
+            },
+            {
+                "title" : "Piano Concerto No .2",
+                "audioName": "brahms-piano-concerto-2",
+                "excerptName": ""
+            },
+            {
+                "title" : "Symphony No. 2 in D Major",
+                "audioName": "brahms-symphony-2",
+                "excerptName": ""
+            },
+            {
+                "title" : "Violin Concerto",
+                "audioName": "brahms-violin-concerto",
                 "excerptName": ""
             }
         ]
@@ -62,13 +82,33 @@
         "nationality": "Russian",
         "born": 1840,
         "death": 1893,
-        "id": 1003,
+        "id": 3,
         "description": "Pyotr Ilyich Tchaikovsky was a Russian composer of the Romantic period. He was the first Russian composer whose music would make a lasting impression internationally. He was honored in 1884 by Tsar Alexander III and awarded a lifetime pension.",
         "imageName": "tchaikovsky",
         "works": [
             {
-                "title" : "",
-                "audioName": "",
+                "title" : "Waltz of the Flowers from The Nutcracker",
+                "audioName": "tchaikovsky-waltz-of-flowers",
+                "excerptName": ""
+            },
+            {
+                "title" : "Liturgy of St John Chrystostom",
+                "audioName": "tchaikovsky-liturgy",
+                "excerptName": ""
+            },
+            {
+                "title" : "Symphony No. 4",
+                "audioName": "tchaikovsky-symphony-4",
+                "excerptName": ""
+            },
+            {
+                "title" : "Swan Lake",
+                "audioName": "tchaikovsky-swan-lake",
+                "excerptName": ""
+            },
+            {
+                "title" : "Serenade for Strings",
+                "audioName": "tchaikovsky-serenade-for-strings",
                 "excerptName": ""
             }
         ]
@@ -80,15 +120,68 @@
         "nationality": "Italian",
         "born": 1678,
         "death": 1741,
-        "id": 1002,
+        "id": 4,
         "description": "Antonio Lucio Vivaldi was an Italian Baroque composer, virtuoso violinist, teacher, impresario, and Roman Catholic priest. Born in Venice, the capital of the Venetian Republic, Vivaldi is regarded as one of the greatest Baroque composers.",
         "imageName": "vivaldi",
         "works": [
             {
-                "title" : "",
-                "audioName": "",
+                "title" : "Violin Concerto in E major ('La Primavera')",
+                "audioName": "vivaldi-violin-concerto",
+                "excerptName": ""
+            },
+            {
+                "title" : "Flute Concerto in G minor ('La Notte')",
+                "audioName": "vivaldi-flute-concerto",
+                "excerptName": ""
+            },
+            {
+                "title" : "Double Cello Concerto in G minor",
+                "audioName": "vivaldi-double-cello-concerto",
+                "excerptName": ""
+            },
+            {
+                "title" : "Violin Sonata in A major",
+                "audioName": "vivaldi-violin-sonata",
                 "excerptName": ""
             }
         ]
-    }
+    },
+    {
+        "fullName": "Wolfgang Amadeus Mozart",
+        "lastName": "Brahms",
+        "country": "Austria",
+        "nationality": "Austrian",
+        "born": 1756,
+        "death": 11791,
+        "id": 5,
+        "description": "Wolfgang Amadeus Mozart, baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period. Despite his short life, his rapid pace of composition resulted in more than 600 works of virtually every genre of his time. ",
+        "imageName": "mozart",
+        "works": [
+            {
+                "title" : "Horn Concerto No.4",
+                "audioName": "mozart-horn-concerto",
+                "excerptName": ""
+            },
+            {
+                "title" : "Symphony 40",
+                "audioName": "mozart-symphony-40",
+                "excerptName": ""
+            },
+            {
+                "title" : "Piano Concerto No. 20",
+                "audioName": "mozart-piano-concerto-20",
+                "excerptName": ""
+            },
+            {
+                "title" : "Marriage of Figaro",
+                "audioName": "mozart-marriage-of-figaro",
+                "excerptName": ""
+            },
+            {
+                "title" : "Symphony 25",
+                "audioName": "mozart-symphony-25",
+                "excerptName": ""
+            }
+        ]
+    },
 ]
