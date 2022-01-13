@@ -6,7 +6,7 @@
         "nationality": "German",
         "born": 1770,
         "death": 1827,
-        "id": 1,
+        "id": 0,
         "description": "Ludwig van Beethoven was a German composer and pianist. Beethoven remains one of the most admired composers in the history of Western music; his works rank amongst the most performed of the classical music repertoire and span the transition from the Classical period to the Romantic era in classical music.",
         "imageName": "beethoven",
         "works": [
@@ -44,7 +44,7 @@
         "nationality": "German",
         "born": 1833,
         "death": 1897,
-        "id": 2,
+        "id": 1,
         "description": "Johannes Brahms was a German composer, pianist, and conductor of the Romantic period. Born in Hamburg into a Lutheran family, he spent much of his professional life in Vienna.",
         "imageName": "brahms",
         "works": [
@@ -82,7 +82,7 @@
         "nationality": "Russian",
         "born": 1840,
         "death": 1893,
-        "id": 3,
+        "id": 2,
         "description": "Pyotr Ilyich Tchaikovsky was a Russian composer of the Romantic period. He was the first Russian composer whose music would make a lasting impression internationally. He was honored in 1884 by Tsar Alexander III and awarded a lifetime pension.",
         "imageName": "tchaikovsky",
         "works": [
@@ -120,7 +120,7 @@
         "nationality": "Italian",
         "born": 1678,
         "death": 1741,
-        "id": 4,
+        "id": 3,
         "description": "Antonio Lucio Vivaldi was an Italian Baroque composer, virtuoso violinist, teacher, impresario, and Roman Catholic priest. Born in Venice, the capital of the Venetian Republic, Vivaldi is regarded as one of the greatest Baroque composers.",
         "imageName": "vivaldi",
         "works": [
@@ -148,12 +148,12 @@
     },
     {
         "fullName": "Wolfgang Amadeus Mozart",
-        "lastName": "Brahms",
+        "lastName": "Mozart",
         "country": "Austria",
         "nationality": "Austrian",
         "born": 1756,
         "death": 11791,
-        "id": 5,
+        "id": 4,
         "description": "Wolfgang Amadeus Mozart, baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period. Despite his short life, his rapid pace of composition resulted in more than 600 works of virtually every genre of his time. ",
         "imageName": "mozart",
         "works": [

@@ -9,27 +9,57 @@ import SwiftUI
 
 struct QuizOption: View {
     
-    @State private var isSelected: Bool = false
-    @State private var color: Color = Color.white
+    @Binding var currentSelection: Int?
+    @Binding var currentComposerSelection: Int?
+    @Binding var showResult: Bool
     
     var optionID: Int
     var composer: Composer
+    var answerComposerID: Int
+
+//    func PrintInit() {
+////        print("Option ID: \(self.optionID)  Composer: \(self.composer.lastName), answer: \(modelData.composers[answerComposerID].lastName)")
+//    }
+    
+    func getColor() -> Color {
+        var color: Color = Color.white
+        if currentSelection == nil {
+            return color
+        }
+        
+        if self.showResult {
+            //if this option is the answer turn green
+            if self.composer.id == self.answerComposerID {
+                color = Color.green
+            }
+            //else if this option is selected but is not the correct answer, turn red
+            else if self.currentSelection == self.optionID && self.composer.id != self.answerComposerID {
+                color = Color.red
+            }
+        }
+        else {
+            if currentSelection == self.optionID {
+                color = Color.blue
+            }
+        }
+        
+        return color
+    }
     
     
     var body: some View {
         VStack{
             Button(action: {
-                isSelected = !isSelected
-                if isSelected{
-                    color = Color.blue
+                // as long as the user has not submitted an answer, change the selection
+                if !self.showResult {
+                    self.currentSelection = self.optionID
+                    self.currentComposerSelection = self.composer.id
                 }
-                else{
-                    color = Color.white
-                }
+               
                 
             }) {
                 CircleImage(image: composer.image)
-                    .frame(minWidth: 90, idealWidth: 125, maxWidth:150, minHeight: 90, idealHeight: 125, maxHeight: 90, alignment: .center)
+                    .frame(minWidth: 90, idealWidth: 125, maxWidth:150, minHeight: 90, idealHeight: 125, maxHeight: 150)
                     .padding(.top)
             }
             
@@ -38,7 +68,7 @@ struct QuizOption: View {
                 .padding()
         }
             .padding()
-            .background(LinearGradient(gradient: Gradient(colors: [color, Color.white]), startPoint: .top, endPoint: .bottom))
+            .background(LinearGradient(gradient: Gradient(colors: [self.getColor(), Color.white]), startPoint: .top, endPoint: .bottom))
             .cornerRadius(50)
            
         
@@ -46,7 +76,10 @@ struct QuizOption: View {
 }
 
 struct QuizOption_Previews: PreviewProvider {
+    @State static var selection: Int? = 0
+    @State static var composerSelection: Int? = 0
+    @State static var showResult: Bool = false
     static var previews: some View {
-        QuizOption(optionID: 0, composer: composers[3])
+        QuizOption(currentSelection: $selection, currentComposerSelection: $composerSelection, showResult: $showResult, optionID: 0, composer: composers[3], answerComposerID: 0)
     }
 }

@@ -6,6 +6,11 @@
 //
 
 import Foundation
+import Combine
+
+//final class ModelData: ObservableObject {
+//    @Published var score = 0
+//}
 
 var quiz: Quiz = Quiz()
 var composers: [Composer] = load("Data.json")

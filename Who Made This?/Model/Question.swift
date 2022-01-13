@@ -13,6 +13,6 @@ struct Question: Hashable {
     var id: Int
     var answer: Composer
     var workIndex: Int
-    var otherOptions: [Composer]
+    var options: [Composer]
     var composersWorkNumber: Int
 }

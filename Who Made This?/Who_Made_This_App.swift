@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct Who_Made_This_App: App {
+    
     var body: some Scene {
         WindowGroup {
-            HomeView() 
+            HomeView()
         }
     }
 }

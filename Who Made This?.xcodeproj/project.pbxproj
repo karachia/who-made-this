@@ -20,7 +20,6 @@
 		C10F83F5278AD83E0042679B /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10F83F4278AD83E0042679B /* ModelData.swift */; };
 		C10F83FA278AD97E0042679B /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10F83F9278AD97E0042679B /* QuestionView.swift */; };
 		C10F83FE278AED0D0042679B /* QuizOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10F83FD278AED0D0042679B /* QuizOption.swift */; };
-		C10F8400278AF9500042679B /* QuestionOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10F83FF278AF9500042679B /* QuestionOptions.swift */; };
 		C10F8402278C2F920042679B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10F8401278C2F920042679B /* HomeView.swift */; };
 		C10F8404278C5E360042679B /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10F8403278C5E360042679B /* Quiz.swift */; };
 		C10F8407278C60490042679B /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10F8406278C60490042679B /* utils.swift */; };
@@ -50,6 +49,9 @@
 		C19B4E57278EF620008EF82E /* beethoven-piano-concerto-5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C19B4E3F278EF61F008EF82E /* beethoven-piano-concerto-5.mp3 */; };
 		C19B4E58278EF620008EF82E /* mozart-horn-concerto.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C19B4E40278EF61F008EF82E /* mozart-horn-concerto.mp3 */; };
 		C19B4E59278EF620008EF82E /* beethoven-symphony-9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C19B4E41278EF620008EF82E /* beethoven-symphony-9.mp3 */; };
+		C19B4E5D278FDE7D008EF82E /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19B4E5C278FDE7D008EF82E /* ResultsView.swift */; };
+		C19B4E5F278FE2F1008EF82E /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19B4E5E278FE2F1008EF82E /* LibraryView.swift */; };
+		C19B4E61278FE3C8008EF82E /* LibraryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19B4E60278FE3C8008EF82E /* LibraryRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,7 +88,6 @@
 		C10F83F4278AD83E0042679B /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		C10F83F9278AD97E0042679B /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		C10F83FD278AED0D0042679B /* QuizOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizOption.swift; sourceTree = "<group>"; };
-		C10F83FF278AF9500042679B /* QuestionOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionOptions.swift; sourceTree = "<group>"; };
 		C10F8401278C2F920042679B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C10F8403278C5E360042679B /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		C10F8406278C60490042679B /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
@@ -116,6 +117,9 @@
 		C19B4E3F278EF61F008EF82E /* beethoven-piano-concerto-5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "beethoven-piano-concerto-5.mp3"; sourceTree = "<group>"; };
 		C19B4E40278EF61F008EF82E /* mozart-horn-concerto.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "mozart-horn-concerto.mp3"; sourceTree = "<group>"; };
 		C19B4E41278EF620008EF82E /* beethoven-symphony-9.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "beethoven-symphony-9.mp3"; sourceTree = "<group>"; };
+		C19B4E5C278FDE7D008EF82E /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		C19B4E5E278FE2F1008EF82E /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		C19B4E60278FE3C8008EF82E /* LibraryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,9 +222,11 @@
 			children = (
 				C10F83EC278ACE210042679B /* CircleImage.swift */,
 				C10F83FD278AED0D0042679B /* QuizOption.swift */,
-				C10F83FF278AF9500042679B /* QuestionOptions.swift */,
 				C10F83F9278AD97E0042679B /* QuestionView.swift */,
 				C10F8401278C2F920042679B /* HomeView.swift */,
+				C19B4E5C278FDE7D008EF82E /* ResultsView.swift */,
+				C19B4E5E278FE2F1008EF82E /* LibraryView.swift */,
+				C19B4E60278FE3C8008EF82E /* LibraryRowView.swift */,
 				C10F83BA278AC0A10042679B /* ContentView.swift */,
 			);
 			path = View;
@@ -422,19 +428,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C19B4E5F278FE2F1008EF82E /* LibraryView.swift in Sources */,
 				C10F8402278C2F920042679B /* HomeView.swift in Sources */,
 				C10F8407278C60490042679B /* utils.swift in Sources */,
+				C19B4E5D278FDE7D008EF82E /* ResultsView.swift in Sources */,
 				C10F83BB278AC0A10042679B /* ContentView.swift in Sources */,
 				C10F83F1278AD4860042679B /* Composer.swift in Sources */,
 				C10F83F5278AD83E0042679B /* ModelData.swift in Sources */,
 				C10F83FA278AD97E0042679B /* QuestionView.swift in Sources */,
-				C10F8400278AF9500042679B /* QuestionOptions.swift in Sources */,
 				C10F8404278C5E360042679B /* Quiz.swift in Sources */,
 				C10F83FE278AED0D0042679B /* QuizOption.swift in Sources */,
 				C10F8409278C60DA0042679B /* Question.swift in Sources */,
 				C10F83B9278AC0A10042679B /* Who_Made_This_App.swift in Sources */,
 				C19B4E23278ED807008EF82E /* AudioPlayer.swift in Sources */,
 				C10F83ED278ACE210042679B /* CircleImage.swift in Sources */,
+				C19B4E61278FE3C8008EF82E /* LibraryRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

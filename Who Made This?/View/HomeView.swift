@@ -8,7 +8,12 @@
 import SwiftUI
 
 struct HomeView: View {
-//    @State private var action: Int? = 0
+//    @EnvironmentObject var modelData: ModelData
+    
+    func generateQuestions() -> Question {
+        quiz.generateQuestions()
+        return quiz.questions[0]
+    }
 
     var body: some View {
         NavigationView {
@@ -28,7 +33,8 @@ struct HomeView: View {
                         .padding(.bottom)
             
                     NavigationLink {
-                        QuestionView(question: quiz.questions[0])
+                        QuestionView(question: self.generateQuestions(), score: 0)
+                        
                     } label: {
                         Text("Click Here to Start the Quiz! ")
                              .font(.title3)
@@ -78,6 +84,7 @@ struct HomeView: View {
         }
         .navigationBarTitle("")
         .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
     }
 }
 
