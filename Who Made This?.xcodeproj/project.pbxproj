@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C10F83B9278AC0A10042679B /* Who_Made_This_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10F83B8278AC0A10042679B /* Who_Made_This_App.swift */; };
-		C10F83BB278AC0A10042679B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10F83BA278AC0A10042679B /* ContentView.swift */; };
 		C10F83BD278AC0A20042679B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C10F83BC278AC0A20042679B /* Assets.xcassets */; };
 		C10F83C0278AC0A20042679B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C10F83BF278AC0A20042679B /* Preview Assets.xcassets */; };
 		C10F83CA278AC0A20042679B /* Who_Made_This_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10F83C9278AC0A20042679B /* Who_Made_This_Tests.swift */; };
@@ -75,7 +74,6 @@
 /* Begin PBXFileReference section */
 		C10F83B5278AC0A10042679B /* Who Made This?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Who Made This?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C10F83B8278AC0A10042679B /* Who_Made_This_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Who_Made_This_App.swift; sourceTree = "<group>"; };
-		C10F83BA278AC0A10042679B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C10F83BC278AC0A20042679B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C10F83BF278AC0A20042679B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C10F83C5278AC0A20042679B /* Who Made This?Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Who Made This?Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -222,15 +220,10 @@
 		C10F83F7278AD9300042679B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C10F83EC278ACE210042679B /* CircleImage.swift */,
-				C10F83FD278AED0D0042679B /* QuizOption.swift */,
-				C10F83F9278AD97E0042679B /* QuestionView.swift */,
 				C10F8401278C2F920042679B /* HomeView.swift */,
-				C19B4E5C278FDE7D008EF82E /* ResultsView.swift */,
-				C19B4E5E278FE2F1008EF82E /* LibraryView.swift */,
-				C19B4E60278FE3C8008EF82E /* LibraryRowView.swift */,
-				C19B4E62278FE6BA008EF82E /* ComposerPage.swift */,
-				C10F83BA278AC0A10042679B /* ContentView.swift */,
+				C19B4E64278FFA08008EF82E /* Library */,
+				C19B4E65278FFA0D008EF82E /* Quiz */,
+				C19B4E67278FFA50008EF82E /* UI Components */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -274,6 +267,34 @@
 				C19B4E22278ED807008EF82E /* AudioPlayer.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		C19B4E64278FFA08008EF82E /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				C19B4E5E278FE2F1008EF82E /* LibraryView.swift */,
+				C19B4E60278FE3C8008EF82E /* LibraryRowView.swift */,
+				C19B4E62278FE6BA008EF82E /* ComposerPage.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		C19B4E65278FFA0D008EF82E /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				C10F83FD278AED0D0042679B /* QuizOption.swift */,
+				C10F83F9278AD97E0042679B /* QuestionView.swift */,
+				C19B4E5C278FDE7D008EF82E /* ResultsView.swift */,
+			);
+			path = Quiz;
+			sourceTree = "<group>";
+		};
+		C19B4E67278FFA50008EF82E /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				C10F83EC278ACE210042679B /* CircleImage.swift */,
+			);
+			path = "UI Components";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,7 +457,6 @@
 				C19B4E63278FE6BA008EF82E /* ComposerPage.swift in Sources */,
 				C10F8407278C60490042679B /* utils.swift in Sources */,
 				C19B4E5D278FDE7D008EF82E /* ResultsView.swift in Sources */,
-				C10F83BB278AC0A10042679B /* ContentView.swift in Sources */,
 				C10F83F1278AD4860042679B /* Composer.swift in Sources */,
 				C10F83F5278AD83E0042679B /* ModelData.swift in Sources */,
 				C10F83FA278AD97E0042679B /* QuestionView.swift in Sources */,
