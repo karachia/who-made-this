@@ -66,7 +66,7 @@ struct HomeView: View {
                         .padding(.bottom)
                     
                     NavigationLink {
-                        // TODO: put the listening view here
+                        LibraryView()
                     } label: {
                         Text("Click Here to Get Educated!")
                              .font(.title3)

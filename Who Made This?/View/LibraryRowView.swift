@@ -12,23 +12,30 @@ struct LibraryRowView: View {
     var composer: Composer?
     
     var body: some View {
-        
-        VStack {
-            HStack{
-                CircleImage(image: composer!.image)
-                    .frame(minWidth: 100, idealWidth: 120, maxWidth: 128, minHeight: 100, idealHeight: 120, maxHeight: 128)
-                    .padding()
-                
-                Text(composer!.lastName)
-                    .font(.title2)
-                    .bold()
-                Spacer()
-                
+//        NavigationView{
+            VStack {
+                NavigationLink {
+                    ComposerPage(composer: self.composer)
+                    
+                } label: {
+                    HStack{
+                        CircleImage(image: self.composer!.image)
+                            .frame(minWidth: 100, idealWidth: 120, maxWidth: 128, minHeight: 100, idealHeight: 120, maxHeight: 128)
+                            .padding()
+                        
+                        Text(self.composer!.lastName)
+                            .font(.title2)
+                            .bold()
+                            .foregroundColor(.black)
+                        Spacer()
+                        
+                    }
+                }
             }
-//            Rectangle().frame(height: 1)
-//                .foregroundColor(.black)
-            
-        }
+//        }
+//        .navigationBarTitle("")
+//        .navigationBarHidden(true)
+//        .navigationBarBackButtonHidden(true)
         
     }
 }

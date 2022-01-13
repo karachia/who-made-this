@@ -52,6 +52,7 @@
 		C19B4E5D278FDE7D008EF82E /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19B4E5C278FDE7D008EF82E /* ResultsView.swift */; };
 		C19B4E5F278FE2F1008EF82E /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19B4E5E278FE2F1008EF82E /* LibraryView.swift */; };
 		C19B4E61278FE3C8008EF82E /* LibraryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19B4E60278FE3C8008EF82E /* LibraryRowView.swift */; };
+		C19B4E63278FE6BA008EF82E /* ComposerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19B4E62278FE6BA008EF82E /* ComposerPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +121,7 @@
 		C19B4E5C278FDE7D008EF82E /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
 		C19B4E5E278FE2F1008EF82E /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		C19B4E60278FE3C8008EF82E /* LibraryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryRowView.swift; sourceTree = "<group>"; };
+		C19B4E62278FE6BA008EF82E /* ComposerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposerPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +229,7 @@
 				C19B4E5C278FDE7D008EF82E /* ResultsView.swift */,
 				C19B4E5E278FE2F1008EF82E /* LibraryView.swift */,
 				C19B4E60278FE3C8008EF82E /* LibraryRowView.swift */,
+				C19B4E62278FE6BA008EF82E /* ComposerPage.swift */,
 				C10F83BA278AC0A10042679B /* ContentView.swift */,
 			);
 			path = View;
@@ -430,6 +433,7 @@
 			files = (
 				C19B4E5F278FE2F1008EF82E /* LibraryView.swift in Sources */,
 				C10F8402278C2F920042679B /* HomeView.swift in Sources */,
+				C19B4E63278FE6BA008EF82E /* ComposerPage.swift in Sources */,
 				C10F8407278C60490042679B /* utils.swift in Sources */,
 				C19B4E5D278FDE7D008EF82E /* ResultsView.swift in Sources */,
 				C10F83BB278AC0A10042679B /* ContentView.swift in Sources */,

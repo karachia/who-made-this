@@ -25,7 +25,6 @@ struct LibraryView: View {
                     Spacer()
                     
                     ScrollView {
-                    
                         LibraryRowView(composer: composers[0])
                         LibraryRowView(composer: composers[1])
                         LibraryRowView(composer: composers[2])
@@ -40,7 +39,7 @@ struct LibraryView: View {
                     
                     
                     
-                    Spacer()
+//                    Spacer()
                     
             
                     NavigationLink {
