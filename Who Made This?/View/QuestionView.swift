@@ -37,6 +37,7 @@ struct QuestionView: View {
     }
     
     
+    // creates the question's option views
     func generateAllOptions() -> [QuizOption]{
         var allOptions: [QuizOption] = []
         var i = 0

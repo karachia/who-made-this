@@ -32,16 +32,8 @@ struct LibraryView: View {
                         LibraryRowView(composer: composers[4])
                     }
                     
+                    Spacer()
                     
-                    
-                    
-                
-                    
-                    
-                    
-//                    Spacer()
-                    
-            
                     NavigationLink {
                         HomeView()
                         
@@ -50,7 +42,7 @@ struct LibraryView: View {
                              .font(.title3)
                              .bold()
                              .foregroundColor(.white)
-                             .padding()
+                             .padding(5)
                              .frame(maxWidth: .infinity)
                     }
                         .padding()

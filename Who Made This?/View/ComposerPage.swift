@@ -13,6 +13,10 @@ struct ComposerPage: View {
     var body: some View {
         
         VStack{
+            CircleImage(image: composer!.image)
+                .frame(width: 200, height: 200, alignment: .center)
+                .padding()
+            
             Text(self.composer!.fullName)
                 .font(.title)
                 .padding(.top)

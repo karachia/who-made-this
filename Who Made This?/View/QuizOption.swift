@@ -16,10 +16,6 @@ struct QuizOption: View {
     var optionID: Int
     var composer: Composer
     var answerComposerID: Int
-
-//    func PrintInit() {
-////        print("Option ID: \(self.optionID)  Composer: \(self.composer.lastName), answer: \(modelData.composers[answerComposerID].lastName)")
-//    }
     
     func getColor() -> Color {
         var color: Color = Color.white

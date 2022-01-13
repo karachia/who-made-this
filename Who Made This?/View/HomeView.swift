@@ -30,6 +30,7 @@ struct HomeView: View {
                         .italic()
                         .multilineTextAlignment(.center)
                         .foregroundColor(.gray)
+                        .padding()
                         .padding(.bottom)
             
                     NavigationLink {
