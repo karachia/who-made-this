@@ -20,7 +20,6 @@ struct Quiz {
         
         // Mix up the orders to make them a bit more random
         listOfQuestioinsWithTheirAnswerAsComposerIDsForValues.shuffle()
-//        print("listOfQuestioinsWithTheirAnswerAsComposerIDsForValues: \(listOfQuestioinsWithTheirAnswerAsComposerIDsForValues)")
         
         // Now let's select a work from each question's composer's selection of works
         
@@ -37,50 +36,37 @@ struct Quiz {
         //   * find a work for the questions answer (questions are multiple choice (4 options) with only one correct answer
         //   * generate the other 3 options
         for (counter, composerID) in listOfQuestioinsWithTheirAnswerAsComposerIDsForValues.enumerated(){
-//            print("Looking at index \(composerID) which is \(composers[composerID].lastName)")
-//            print("composer \(composers[idx].lastName)")
-//            print("works # \(composers[idx].works.count)")
-            
+    
             // get a random work from this composer
             var indexOfMusicForComposer = Int.random(in: 0..<composers[composerID].works.count)
-//            print("Initial work number for \(composers[composerID].lastName) idx: \(composerID) : \(indexOfMusicForComposer)")
             
             
             // if the music from this composer is already in the quiz, try to find another one
             while(mapOfAllQuestionsAndAnswers[composerID]!.contains(indexOfMusicForComposer)){
-//                print("this work already exists in quiz...trying to get a new work")
                 indexOfMusicForComposer = Int.random(in: 0..<composers[composerID].works.count)
             }
-//            print("Final work number for \(composers[composerID].lastName) idx: \(composerID) : \(indexOfMusicForComposer)")
             mapOfAllQuestionsAndAnswers[composerID]!.append(indexOfMusicForComposer)
             
             
             // array that holds all the 4 options for each mutliple choice question.
             // First add the correct answer to options
             var options:  [Int] = [composerID]
-//            print("options with just the answer: \(options)")
             
             // now find the other 3 options and make all options in the question are unique
             for _ in 0...2{
-//                print("finding option \(j+2)")
                 var optionIdx = Int.random(in: 0..<composers.count)
-//                print("Initial composer option \(composers[optionIdx].lastName) optionIdx: \(optionIdx)")
                 
                 // make sure the selected option is unique
                 while (options.contains(optionIdx)){
-//                    print("option \(optionIdx) already exists. trying a new one")
                     optionIdx = Int.random(in: 0..<composers.count)
                 }
-//                print("Final composer option \(composers[optionIdx].lastName) optionIdx: \(optionIdx)")
                 
                 options.append(optionIdx)
             }
             
-//            print("optioins before shuffle(): \(options)")
             // mix up the options so that the correct answer is not always the first option
             options.shuffle()
             
-//            print("optioins after shuffle(): \(options)")
             
             // new add composers as options instead of just their ID
             var composerOptions: [Composer] = []
@@ -92,11 +78,6 @@ struct Quiz {
             
             self.questions.append(Question(id: counter, answer: composers[composerID], workIndex: indexOfMusicForComposer, options: composerOptions, composersWorkNumber: indexOfMusicForComposer))
             
-//            print("Q\(counter+1) answer is: \(composers[composerID].lastName)")
-//            print("options for Q\(counter+1) are")
-//            for o in composerOptions {
-//                print("--- \(o.lastName)")
-//            }
         }
     }
 }
